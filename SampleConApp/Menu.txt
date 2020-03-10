@@ -1,0 +1,6 @@
+﻿~~~~~~~~~~~~~~~~~EMPLOYEE MONITORING SYSTEM~~~~~~~~~~~~
+TO ADD NEW EMPLOYEE-------------->PRESS 1
+TO UPDATE EMPLOYEE---------------->PRESS 2
+TO FIND EMPLOYEE BY ID------------>PRESS 3
+TO FIND EMPLOYEE ON NAME-------->PRESS 4
+PS: ANY OTHER KEY IS EXIT THE APPLICATION..........................................
