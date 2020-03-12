@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Prompt....
 namespace SampleConApp
 {
     static class Utility
@@ -25,5 +26,11 @@ namespace SampleConApp
             return double.Parse(GetString(question));
         }
 
+        public static void ClearScreen()
+        {
+            Console.WriteLine("Press any key to Clear");
+            Console.ReadKey();
+            Console.Clear();
+        }
     }
 }
