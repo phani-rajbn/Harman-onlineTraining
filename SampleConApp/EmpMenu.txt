@@ -1,0 +1,7 @@
+﻿~~~~~~~~~~~~~EMPLOYEE MONITORING SYSTEM~~~~~~~~~~~~~~~~
+TO ADD NEW EMPLOYEE------------------------->PRESS N
+TO UPDATE EMPLOYEE--------------------------->PRESS U
+TO DELETE AN EMPLOYEE------------------------>PRESS D
+TO FIND AN EMPLOYEE--------------------------->PRESS F
+PS: ANY OTHER KEY IS CONSIDERED AS EXIT!!!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

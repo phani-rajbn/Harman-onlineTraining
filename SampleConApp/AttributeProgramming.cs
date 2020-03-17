@@ -5,6 +5,8 @@ using System.Reflection;
 
 //Attributes are optional properties  are are injecting into the Application which can be set by the user if required. The optional property will be added to the class only if the user sets it, else the property will not be available to the object. Any additional logic U wish to place to an object or a class or a method could be injected thro attributes. Attributes are added using [] above the code that U wish to add. 
 //WCF uses a lot of attributes to set extra logic to Ur code. Serialization also adds extra code to serialize the objects using [Serializable]...
+//Reflection helps in reading the metadata of UR Assembly at runtime where u could load a Assembly at runtime, access its  members thro code using the classes of reflection and invoke the methods.
+
 namespace SampleConApp
 {
     [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = true)]
@@ -18,7 +20,6 @@ namespace SampleConApp
         public SampleAttribute(string positionalString)
         {
             ourinternalValue = positionalString;
-
         }
 
         public string OurString

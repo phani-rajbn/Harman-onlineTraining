@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <EmpID>111</EmpID>
+    <EmpName>Phaniraj</EmpName>
+    <EmpSalary>55000</EmpSalary>
+  </Employee>
+</ArrayOfEmployee>
