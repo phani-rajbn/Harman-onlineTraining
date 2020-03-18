@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8713139a-75b2-418e-bc6b-b63e4c0be8e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1234/MyWCFServices/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="8cf02c07-e8f6-4d5f-99fc-1635b3cce56f" SourceId="1" SourceUrl="http://localhost:1234/MyWCFServices/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="9093752a-27c1-4e44-967e-dd29c91286e3" SourceId="1" SourceUrl="http://localhost:1234/MyWCFServices/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="d9080416-641e-42bf-80b7-687c85ab1649" SourceId="1" SourceUrl="http://localhost:1234/MyWCFServices/?disco" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="f6b70f61-53f3-4eea-b251-3aeea009ad53" SourceId="1" SourceUrl="http://localhost:1234/MyWCFServices/?xsd=xsd2" />
+    <MetadataFile FileName="EmpService.wsdl" MetadataType="Wsdl" ID="734125a4-8606-42f1-a471-c51e04a1d08b" SourceId="1" SourceUrl="http://localhost:1234/MyWCFServices/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
