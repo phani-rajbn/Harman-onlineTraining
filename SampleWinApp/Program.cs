@@ -16,7 +16,7 @@ namespace SampleWinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ServiceClient());
+            Application.Run(new WCFClient());
         }
     }
 }
