@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        var url = "/api/Employee";
+        function fillRecords() {
+            $.get(url, (data) => {
+                $.each(data, (i, e) => {
+                    var tr = "<tr><td>" + e.EmpID + "</td><td>" + e.EmpName + "</td><td>" + e.EmpAddress + "</td><td>" + e.EmpSalary + "</td><td><a href='#' class='edit' empId='" + e.EmpID + "'>Edit</td></tr>";
+                    $("table").append(tr);
+                    $(".edit").click(function () {
+                        var id = $(this).attr("empId");
+                        var temp = url + "/" + id;
+                        $.get(temp, (data) => {
+                            $("#txtID").val(data.EmpID);
+                            $("#txtName").val(data.EmpName);
+                            $("#txtAddress").val(data.EmpAddress);
+                            $("#txtSalary").val(data.EmpSalary);
+                        });
+                    })
+                });               
+            });
+        }
+        $(document).ready(() => {
+            fillRecords();
+                 
+
+            $("button").click(() => {
+                var emp = {};
+                emp.EmpID = $("#txtID").val();
+                emp.EmpName = $("#txtName").val();
+                emp.EmpAddress = $("#txtAddress").val();
+                emp.EmpSalary = $("#txtSalary").val();
+                $.post(url, emp, (res) => alert(res));//adding
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <table border="1" width="90%" style="text-align:center">
+            <tr >
+                <th>EmpID</th>
+                <th>EmpName</th>
+                <th>EmpAddress</th>
+                <th>EmpSalary</th>
+                <th>Options</th>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Add new Employee</h2>
+        <p><input id="txtID" placeholder="Enter the ID" /></p>
+        <p><input id="txtName" placeholder="Enter the Name" /></p>
+        <p><input id="txtAddress" placeholder="Enter the Address" /></p>
+        <p><input id="txtSalary" placeholder="Enter the Salary" /></p>
+        <p><button>Save</button></p>
+    </div>
+</body>
+</html>
